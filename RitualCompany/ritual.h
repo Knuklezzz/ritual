@@ -8,31 +8,13 @@
 #include <iomanip>
 #include "productlist.h"
 #include "productinputscreen.h"
-#include "revenuerow.h"
+#include "revenuerecord.h"
 using namespace std;
 
 //////////////////// глобальные методы //////////////////////
 void getaLine(string& inStr); // получение строки текста
 char getaChar(); // получение символа
 
-
-
-
-
-//////////////////// класс RevenueRecord ///////////////////////
-//класс RevenueRecord. Он хранит непосредственно записи о выручке.
-//С ним будет взаимодействовать экран добавления количества продаж.
-class RevenueRecord
-{
-private:
-    list <RevenueRow*> setPtrsRR; // список указателей на объекты класса RevenueRow
-    list <RevenueRow*>::iterator iter;
-public:
-    ~RevenueRecord();
-    void insertRevenue(int, int, int, float); // добавить выручку
-    void display(); // отобразить все строки с выручками
-    float getSumOfRevenues(); // подсчитать сумму всех выручек всех товаров
-};
 
 
 ////////////////////класс SellsInputScreen //////////////////
