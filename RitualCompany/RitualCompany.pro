@@ -10,7 +10,10 @@ SOURCES += main.cpp \
     productinputscreen.cpp \
     revenuerow.cpp \
     revenuerecord.cpp \
-    sellsinputscreen.cpp
+    sellsinputscreen.cpp \
+    expenserecord.cpp \
+    expenseinputscreen.cpp \
+    annualreport.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -22,5 +25,9 @@ HEADERS += \
     productinputscreen.h \
     revenuerow.h \
     revenuerecord.h \
-    sellsinputscreen.h
+    sellsinputscreen.h \
+    expense.h \
+    expenserecord.h \
+    expenseinputscreen.h \
+    annualreport.h
 
