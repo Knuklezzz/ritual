@@ -16,5 +16,5 @@ public:
     ~RevenueRecord();
     void insertRevenue(int, int, int, float); // добавить выручку
     void display(); // отобразить все строки с выручками
-    float getSumOfRevenues(); // подсчитать сумму всех выручек всех жильцов
+    float getSumOfRevenues(); // подсчитать сумму всех выручек всех товаров
 };
