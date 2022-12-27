@@ -1,5 +1,5 @@
 #include "productinputscreen.h"
-#include "ritual.h"
+#include "userinterface.h"
 
 ///////////метод класса ProductInputScreen//////////////////
 void ProductInputScreen::setProduct() // добавить данные о товаре

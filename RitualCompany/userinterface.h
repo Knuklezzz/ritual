@@ -1,11 +1,4 @@
 #pragma once
-//заголовочный файл содержит объявления классов и т.п.
-#include <iostream>
-#include <vector>
-#include <list>
-#include <string>
-#include <numeric> //для accumulate() и fill()
-#include <iomanip>
 #include "productlist.h"
 #include "productinputscreen.h"
 #include "revenuerecord.h"
@@ -39,4 +32,4 @@ public:
     UserInterface();
     ~UserInterface();
     void interact();
-}; // конец класса userInterface
+};

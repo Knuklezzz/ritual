@@ -1,4 +1,4 @@
-#include "ritual.h"
+#include "userinterface.h"
 int main()
 {
     UserInterface theUserInterface;

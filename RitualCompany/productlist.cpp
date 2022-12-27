@@ -62,9 +62,10 @@ void ProductList::display() // вывод списка товаров
         iter = setPtrsProd.begin();
         while (iter != setPtrsProd.end()) // выводим список всех товаров
         {
-            cout << "\n" << setw(10) << left << (*iter)->getArticle() << setw(20) << left << (*iter)->getName() << setw(10) << left << (*iter)->getPrice() << "\n" << endl;
+            cout << "\n" << setw(10) << left << (*iter)->getArticle() << setw(20) << left << (*iter)->getName() << setw(10) << left << (*iter)->getPrice()<< endl;
             *iter++;
         }
+        cout << "\n" << endl;
     }
 }
 //--------------------------------------------------------

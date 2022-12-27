@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iomanip>
 using namespace std;
 
 ///////////////////////класс Expense///////////////////////

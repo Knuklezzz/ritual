@@ -4,7 +4,6 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    ritual.cpp \
     product.cpp \
     productlist.cpp \
     productinputscreen.cpp \
@@ -13,13 +12,13 @@ SOURCES += main.cpp \
     sellsinputscreen.cpp \
     expenserecord.cpp \
     expenseinputscreen.cpp \
-    annualreport.cpp
+    annualreport.cpp \
+    userinterface.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    ritual.h \
     product.h \
     productlist.h \
     productinputscreen.h \
@@ -29,5 +28,6 @@ HEADERS += \
     expense.h \
     expenserecord.h \
     expenseinputscreen.h \
-    annualreport.h
+    annualreport.h \
+    userinterface.h
 

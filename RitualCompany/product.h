@@ -11,7 +11,7 @@ class Product
 private:
     string name; // название товара
     int article; // артикул товара
-    float price;
+    float price; //цена товара
 public:
     Product(string n, int art, float pr);
     ~Product();

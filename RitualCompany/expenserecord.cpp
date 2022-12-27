@@ -20,8 +20,8 @@ void ExpenseRecord::insertExp(Expense* ptrExp)
 //---------------------------------------------------------
 void ExpenseRecord::display() // распечатываем все расходы
 {
-    cout << "\nDate\tRecipient\tSum\tCategory\n"
-        << "----------------------------------------\n" << endl;
+    cout << "\n" << setw(8) << left << "Date" << setw(15) << left << "Recipient" << setw(8) << left << "Sum"<< setw(12) << left << "Category" << endl;
+    cout  << "-------------------------------------------------\n" << endl;
     if (vectPtrsExpenses.size() == 0) // В контейнере нет расходов
         cout << "***There are no expenses***\n" << endl;
     else
@@ -29,8 +29,7 @@ void ExpenseRecord::display() // распечатываем все расход�
         iter = vectPtrsExpenses.begin();
         while (iter != vectPtrsExpenses.end())
         { // распечатываем все расходы
-            cout << (*iter)->month << '/' << (*iter)->day << '\t' << (*iter)->payee << '\t' << '\t';
-            cout << (*iter)->amount << '\t' << (*iter)->category << endl;
+            cout << setw(2) << left << (*iter)->day << '/' << setw(6) << left << (*iter)->month << setw(15) << left << (*iter)->payee << setw(8) << left << (*iter)->amount << setw(12) << left << (*iter)->category << endl;
             iter++;
         }
         cout << endl;
@@ -44,14 +43,11 @@ float ExpenseRecord::displaySummary()
     float totalExpenses = 0; // Сумма по всем категориям расходов
     if (vectPtrsExpenses.size() == 0)
     {
-        cout << "\tAll categories\t0\n";
         return 0;
     }
     iter = vectPtrsExpenses.begin();
     while (iter != vectPtrsExpenses.end())
     {
-        //выводим на экран категории расходов
-        cout << '\t' << ((*iter)->category) << '\t' << ((*iter)->amount) << endl;
         totalExpenses += (*iter)->amount; //подсчитываем все расходы
         iter++;
     }

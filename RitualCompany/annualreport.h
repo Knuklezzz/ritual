@@ -1,6 +1,7 @@
 #pragma once
 #include "expenserecord.h"
 #include "RevenueRecord.h"
+#include <iomanip>
 
 //////////////////класс AnnualReport///////////////////////
 //Класс годового отчета

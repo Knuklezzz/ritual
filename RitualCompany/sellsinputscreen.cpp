@@ -1,10 +1,10 @@
 #include "sellsinputscreen.h"
-#include "ritual.h"
+#include "userinterface.h"
 
 /////////////////методы класса SellsInputScreen/////////////
 void SellsInputScreen::setSells()
 {
-    cout << "Enter the name of the product/service: ";
+    cout << "Enter the name of the product/service: \n";
     getaLine(productName);
     // получить артикул и стоимость по названию товара
     art = ptrProductList->getArt(productName);

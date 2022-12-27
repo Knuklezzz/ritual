@@ -10,7 +10,6 @@ class RevenueRow
 {
 private:
     int art; // артикул товара
-    int ar;
     float revenue[12]; // месяцы
     float prc; //стоимость товара
 public:

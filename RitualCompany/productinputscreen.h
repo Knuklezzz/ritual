@@ -7,10 +7,10 @@
 class ProductInputScreen
 {
 private:
-    ProductList* ptrProductList;
-    string pName;
-    int art;
-    float prc;
+    ProductList* ptrProductList; //указатель на список товаров
+    string pName; //название товара
+    int art; //артикул товара
+    float prc; //цена
 public:
     ProductInputScreen(ProductList* ptrPL) : ptrProductList(ptrPL)
     {

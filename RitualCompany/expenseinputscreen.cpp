@@ -1,5 +1,5 @@
 #include "expenseinputscreen.h"
-#include "ritual.h"
+#include "userinterface.h"
 
 //////////////методы класса ExpenseInputScreen/////////////
 

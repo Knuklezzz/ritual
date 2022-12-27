@@ -1,4 +1,4 @@
-#include "ritual.h"
+#include "userinterface.h"
 
 void getaLine(string& inStr) // получение строки текста
 {
@@ -39,7 +39,7 @@ void UserInterface::interact()
     while (true)
     {
         cout << "To enter data, press 'i', \n"
-            << "To output the report, press 'd', \n"
+            << "To output data, press 'd', \n"
             << "To exit, press 'q': \n";
         ty = getaChar();
         if (ty == 'i') // ввод данных
@@ -63,7 +63,7 @@ void UserInterface::interact()
                 new SellsInputScreen(ptrProductList, ptrRevenueRecord);
                 ptrSellsInputScreen->setSells();
                 delete ptrSellsInputScreen;
-                cout << "Sells were successfully added\n" << endl;
+                cout << "Sales were successfully added\n" << endl;
                 break;
             case 'e': ptrExpenseInputScreen =
                 new ExpenseInputScreen(ptrExpenseRecord);

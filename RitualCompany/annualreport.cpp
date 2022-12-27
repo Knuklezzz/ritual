@@ -8,16 +8,15 @@ AnnualReport::AnnualReport(RevenueRecord* pRR, ExpenseRecord* pER) : ptrRR(pRR),
 //---------------------------------------------------------
 void AnnualReport::display()
 {
-    cout << "Annual report\n--------------\n" << endl;
-    cout << "Incomes\n" << endl;
-    cout << "\tSales revenue:\t\t";
+    cout << setw(20) <<"Annual report" << endl;
+    cout << "--------------------------\n" << endl;
+    cout << setw(18) << left << "Sales revenue: ";
     revenues = ptrRR->getSumOfRevenues();
-    cout << revenues << endl;
+    cout << setw(29) << left << revenues << endl;
 
-    cout << "Expenses\n" << endl;
     expenses = ptrER->displaySummary();
-    cout << "Expences total:\t\t";
-    cout << expenses << endl;
+    cout << setw(19) << left << "\nExpences total: ";
+    cout << setw(10) << left << expenses << endl;
     // вычисляем прибыльность
-    cout << "\nBalance:\t\t\t" << (revenues - expenses) << endl;
+    cout << setw(19) << left << "\nBalance:" << setw(10) << left << (revenues - expenses) << "\n" << endl;
 }
